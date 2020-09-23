@@ -9,5 +9,9 @@
 import Foundation
 
 enum PostError: LocalizedError {
-    case invalidURL 
+    case invalidURL
+    case thrownError(Error)
+    case noData
+    case thrownImageError(Error)
+    case unableToDecode
 }
